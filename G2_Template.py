@@ -19,8 +19,6 @@ border2=pygame.Rect(230,0,10,400)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Project C2")
 carryOn = True
-name = pygame.font.SysFont(None,24).render("Danny", True, WHITE)
-name.get_rect(center=player.center)
 while carryOn:
   for event in pygame.event.get(): 
     if event.type == pygame.QUIT: 
@@ -36,9 +34,7 @@ while carryOn:
   #Check if the y-coordinate of "player" rectangle is lesser than or equal to 0
 
     #Change direction within the if statement
-   
   
-  screen.blit(name,player)
   pygame.draw.rect(screen,(0,0,0),path)
   pygame.draw.rect(screen,WHITE,border1)
   pygame.draw.rect(screen,WHITE,border2)
