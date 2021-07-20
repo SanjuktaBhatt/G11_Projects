@@ -11,10 +11,11 @@ BROWN=(165,102,42)
 size = (400, 400)
 
 
-#Use list comprehension to creat a list of bricks for the wall
+#Use list comprehension to create a list of orange row
 
+#Use list comprehension to create a list of white row
 
-
+#Use list comprehension to create a list of green row
 
 
 screen = pygame.display.set_mode(size)
@@ -38,7 +39,7 @@ while carryOn:
     for j in range(5,391,20):
       audience=pygame.Rect(i,j,10,10)
       pygame.draw.rect(screen,(0,0,0),audience)
-  #Create a for loop to draw each brick
+  #Create a for loop to draw each row
  
 
 
